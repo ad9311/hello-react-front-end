@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello React Front-End!
+# Hello-React-Front-End!
 
-> Hello React Front-End is an app that connects and requests from an external api a randome message in different languages. 
+> Hello-React-Front-End is an app that connects and requests from an external api a random message in different languages. 
 
 ## Built With
 
@@ -32,7 +32,11 @@ yarn install or npm install
 
 Then launch the application with:</br>
 ```
-yarn start or npm start
+yarn start
+```
+Or 
+```
+npm start
 ```
 You will see something like this in your console 👇🏼
 ```
@@ -44,7 +48,7 @@ You can now view hello-react-front-end in the browser.
 Note that the development build is not optimized.
 To create a production build, use yarn build.
 ```
-When using `yarn sart or npm start` your browser should automatically open the app, if not, then use one of the two links in the example above.
+When using `yarn sart` or `npm start` your browser should automatically open the app, if not, then use one of the two links in the example above.
 
 ## API Usage
 
