@@ -1,44 +1,99 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Available Scripts
+# Hello-React-Front-End!
 
-In the project directory, you can run:
+> Hello-React-Front-End is an app that connects and requests from an external api a random message in different languages. 
 
-### `yarn start`
+## Built With
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- ![](https://img.shields.io/badge/-React-blue)
+- ![](https://img.shields.io/badge/-Redux-blueviolet)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Getting Started
 
-### `yarn test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [NVM](https://github.com/nvm-sh/nvm)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) (Recommended)
 
-### `yarn build`
+To get started, first, clone this project by using the following command:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git clone https://github.com/ad9311/hello-react-front-end.git
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Installaion
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Before launching the application, you will need to run a few commands:</br>
 
-### `yarn eject`
+```
+yarn install or npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Then launch the application with:</br>
+```
+yarn start
+```
+Or 
+```
+npm start
+```
+You will see something like this in your console 👇🏼
+```
+You can now view hello-react-front-end in the browser.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.0.31:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+```
+When using `yarn sart` or `npm start` your browser should automatically open the app, if not, then use one of the two links in the example above.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## API Usage
 
-## Learn More
+This app connects to an API that sends back a json format with the following content:
+- Language
+- Flag unicodes in hex separate with a dash <->. Refer to [Unicode](https://www.unicode.org/emoji/charts/full-emoji-list.html) for the complete list of flag codes.
+- Message
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+So the response by the api should look like this:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+{
+  "language": "English",
+  flagCode: "0x1FFFFF-0x1FFFFF",
+  "message": "Hello World"
+}
+```
+
+The intended api used for this application can be found [here](https://github.com/ad9311/hello-rails-back-end)
+
+By the default the API will connect to `localhost:4000/api/v1/greetings` if you wish to change to another api, you can do it in the file `src/api/fetchAPI.js` that is in the root folder.
+
+## Contributing
+
+Contributions, issues and, feature requests are welcome!
+
+You can do it on [issues page](https://github.com/ad9311/hello-react-front-end/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Authors
+
+**Ángel Díaz**
+
+- GitHub: [@ad9311](https://github.com/ad9311)
+- Twitter: [@adiaz9311](https://twitter.com/adiaz9311)
+- LinkedIn: [Ángel Díaz](https://www.linkedin.com/in/ad9311/)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+![](https://img.shields.io/badge/license-MIT-green)</br>
+This project is [MIT](./LICENSE) licensed.
